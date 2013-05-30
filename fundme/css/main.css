@@ -1,0 +1,685 @@
+/* Layout */
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   color: #7b7878;
+   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
+   font-size: 95%;
+   -webkit-font-smoothing: antialiased !important;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	line-height: 2em;
+}
+
+a {
+	color: #7aa368;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+@font-face {
+	
+	font-family: lobster;
+	src: url(../fonts/Lobster.otf);
+}
+
+@font-face {
+	
+	font-family: glypha;
+	src: url(../fonts/Glypha.ttf);
+}
+
+h1 {
+	font-family: lobster;
+	font-size: 300%;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;	
+	padding: 20px 0;
+	color: #7b7878;
+   
+}
+
+h2 {
+	font-family: glypha;
+	font-size: 250%;
+	font-weight: normal;
+	color: inherit;
+
+}
+
+h3 {
+	font-family: glypha;
+	font-weight: normal;
+	color: inherit;
+	font-size: 100%;
+	
+
+}
+
+h4 {
+	font-weight: normal;
+	color: inherit;
+	font-size: 90%;
+	
+
+}
+
+strong {
+	font-family: glypha;
+	font-weight: normal;
+	font-size: 120%;
+}	
+
+img {
+	max-width: 100%;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#body h3, #body h2 {
+	color: #7aa368;
+
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+#header {
+   padding:10px;
+   height: 100px;
+}
+
+#body {
+   padding:10px 10px 50px 10px;
+}
+#sidebar
+{
+	padding: 0 0 25px 0;
+}
+
+.span-19 {
+	
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+.span-5 {
+	
+	width: 80%;
+	margin: 0 10% 50px;
+}
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+}
+
+div.flash-error
+{
+	background:#FBE3E4;
+	color:#8a1f11;
+	border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+div.flash-success
+{
+	background:#E6EFC2;
+	color:#264409;
+	border-color:#C6D880;
+}
+
+div.flash-error a
+{
+	color:#8a1f11;
+}
+
+div.flash-notice a
+{
+	color:#514721;
+}
+
+div.flash-success a
+{
+	color:#264409;
+}
+
+div.form .rememberMe label
+{
+	display: inline;
+}
+
+div.view
+{
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #C9E0ED;
+}
+
+div.breadcrumbs
+{
+	font-size: 0.9em;
+	padding: 5px 20px;
+}
+
+div.breadcrumbs span
+{
+	font-weight: bold;
+}
+
+div.search-form
+{
+	padding: 10px;
+	margin: 10px 0;
+	background: #eee;
+}
+
+.portlet
+{
+}
+
+.portlet-decoration
+{
+	padding: 3px 8px;
+	background: #7aa368;
+}
+
+.portlet-title
+{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+
+.portlet-content
+{
+	font-size:0.9em;
+	margin: 0 0 15px 0;
+	padding: 5px 8px;
+	border: 1px solid #7aa368;
+}
+
+.portlet-content ul
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+.portlet-content li
+{
+	padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.operations li
+{
+	padding-bottom: 2px;
+}
+
+.operations li a
+{
+	font: bold 12px Arial;
+	color: #7aa368;
+	display: block;
+	padding: 2px 0 2px 8px;
+	line-height: 15px;
+	text-decoration: none;
+}
+
+.operations li a:visited
+{
+	color: #7aa368;
+}
+
+.operations li a:hover
+{
+	background: #7aa368;
+	color: #fff;
+}
+
+/* HOME */
+
+#slides {
+	
+	border: 1px solid #ddd;
+}
+
+#featured {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	overflow: auto;
+}
+
+.student {
+	width: 23%;
+	margin: 0 1%;
+	float: left;
+}
+
+#column,
+#column2 {
+	width: 45%;
+	margin: 0;
+	padding: 0;
+}
+
+#column h3, #column2 h3 {
+	margin: 15px 0 10px;
+}
+
+#column {
+	margin-right: 5%;
+	float: left;
+
+}
+
+#column2 {
+	float: right;
+}
+
+#content {
+   padding:0;
+   padding-bottom:0;   /* Height of the footer */
+}
+
+#bottomWrap,
+#footNav,
+#user,
+#wrap,
+#body {
+	width: 80%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#wrap {
+	height: 50px;
+	
+}
+
+#logo {
+	float: left;
+	width: 250px;
+}
+
+#nav,
+#userLinks {
+	text-align: right;
+}
+
+
+#user {
+	height: 20px;
+	padding: 10px 0;
+	color: #7aa368;
+
+}
+
+#nav {
+	float: right;
+	width: 300px;
+	height: 30px;
+	padding-top: 10px;
+}
+
+#footNavLinks li,
+#userLinks li,
+#navLinks li {
+	display: inline;
+	padding: 0 0 0 10px;
+}
+
+#navLinks li a {
+	
+	color: #7b7878;
+
+}
+
+#userLinks li {
+	
+	border-right: 2px solid #7aa368;
+	padding: 0 15px;
+}
+
+#userLinks li a {
+	
+	font-size: 90%;
+}
+
+
+#userLinks :last-child {
+	
+	border-right: none;
+	padding-right: 0;
+}
+
+
+#bottomBorder {
+	margin: 15px 0 0 0;
+	background-image: url('../images/bottom.png');
+	background-repeat: repeat-x;
+	height: 27px;
+	
+}
+
+#bottom {
+	background: #81ab78;
+	padding: 25px 0 60px 0 ;/* Height of the footer */
+	margin: 0;
+	color: #fff;
+}
+
+#bottomWrap {
+	overflow: auto;
+	padding-bottom: 50px;
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#82794f;
+   border-top: 1px solid #5a5332;
+}
+
+
+#footNav{
+	text-align: center;
+	height: 30px;
+	padding: 20px 0 0 0;
+}
+#footNavLinks,
+#footNavLinks li a {
+	color: #e9e4cd;
+}
+
+
+/* ABOUT */
+
+#videoWrap {
+	width: 100%;
+	overflow: auto;
+}
+
+#video {
+	float: left;
+	width: 60%;
+	margin: 0 15px 0 0;
+}
+/* CONTACT */
+
+#contact {
+	margin: 0 auto 50px 0;
+	width: 100%;
+	overflow: auto;	
+}
+
+#form {
+	float: left;
+	width: 50%;
+
+}
+
+#connect {
+	float: right;
+	width: 35%;
+	padding: 25px;
+	background-color: #f8f8f8;
+	border: 1px solid #7b7878;
+}
+
+#connectWrap {
+	
+	width: 55%;
+	margin: 25px auto 0;
+}
+
+#connect h3{
+	margin: 15px 0 10px 0;
+	
+}
+
+textarea {
+	width: 100%;
+	
+}
+
+/* LOGIN FORM */
+
+#registration_form {
+	width: 55%;
+	padding: 55px;
+	background-color: #f8f8f8;
+	border: 1px solid #7b7878;
+	margin: 0 auto;
+}
+
+#login-form {
+	width: 35%;
+	padding: 25px;
+	background-color: #f8f8f8;
+	border: 1px solid #7b7878;
+	margin: 0 auto;
+}
+
+.row.rememberMe.success label {
+	width: 25%;
+}
+
+/* FORM */
+
+
+input[type="text"], input[type="password"]  {
+	width: 100%;
+	
+}
+
+#contact-form {
+	
+	width: 85%;
+	margin: 0 auto;
+}
+    
+input.text { 
+	margin-bottom:12px; 
+	padding: .4em;
+}
+    
+fieldset { 
+	padding:0; 
+	border:0; 
+	margin-top:15px; 
+}
+
+.ui-dialog .ui-state-error { 
+	padding: .3em;
+}
+
+.validateTips { 
+    border: 1px solid transparent; 
+    padding: 0.3em; 
+}
+
+#form .hint
+{
+	margin: 0;
+	padding: 0;
+	color: #999;
+}
+
+#form .note
+{
+	font-style: italic;
+}
+
+#form span.required
+{
+	color: red;
+}
+
+#form div.error label:first-child,
+#form label.error,
+#form span.error
+{
+	color: #C00;
+}
+
+#form div.error input,
+#form div.error textarea,
+#form div.error select,
+#form input.error,
+#form textarea.error,
+#form select.error
+{
+	background: #FEE;
+	border-color: #C00;
+}
+
+#form div.success input,
+#form div.success textarea,
+#form div.success select,
+#form input.success,
+#form textarea.success,
+#form select.success
+{
+	background: #E6EFC2;
+	border-color: #C6D880;
+}
+
+#orm div.success label
+{
+	color: inherit;
+}
+
+#form .errorSummary
+{
+	border: 2px solid #C00;
+	padding: 7px 7px 12px 7px;
+	margin: 0 0 20px 0;
+	background: #FEE;
+	font-size: 0.9em;
+}
+
+#form .errorMessage
+{
+	color: red;
+	font-size: 0.9em;
+}
+
+#form .errorSummary p
+{
+	margin: 0;
+	padding: 5px;
+}
+
+#form .errorSummary ul
+{
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+#yw0_button {
+	
+	display: block;
+	margin: 10px 0;
+}
+
+/* Students */
+
+
+
+
+#featured {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	overflow: auto;
+}
+
+.student {
+	width: 23%;
+	margin: 0 1%;
+	float: left;
+}
+
+.student img {
+	
+	width: 216px;
+	max-width:90%;
+	height: 152px;
+	margin: 0 auto;
+}
+
+/* PROFILE */
+
+#profileWrap {
+	width: 100%;
+	overflow: auto;
+}
+
+#profilePic {
+	float: left;
+	width: 60%;
+	margin: 0 15px 0 0;
+}
+
+#profilePic img {
+	width: 80%;
+	margin: 0 15px 0 0;
+}
+
+#profileInfo ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+#uploads li {
+	display: inline;
+}
+
+#uploads li img {
+	width: 20%;
+	background-color: #fff;
+	padding: 1%;
+	margin: 0 1%;
+}
+
+#statement {
+	
+	margin: 50px 0 0 0;
+}
